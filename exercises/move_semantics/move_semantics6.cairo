@@ -7,7 +7,7 @@ use debug::PrintTrait;
 
 #[derive(Drop)]
 struct Number {
-    value: u32, 
+    value: u32,
 }
 
 fn main() {

@@ -50,10 +50,7 @@ fn display_grades(student: @Student, index: usize) {
 #[available_gas(20000000)]
 fn test_all_defined() {
     let courses = array![
-        Option::Some('A'),
-        Option::Some('B'),
-        Option::Some('C'),
-        Option::Some('A'),
+        Option::Some('A'), Option::Some('B'), Option::Some('C'), Option::Some('A'),
     ];
     let mut student = Student { name: 'Alice', courses: courses };
     display_grades(@student, 0);
@@ -64,11 +61,7 @@ fn test_all_defined() {
 #[available_gas(20000000)]
 fn test_some_empty() {
     let courses = array![
-        Option::Some('A'),
-        Option::None,
-        Option::Some('B'),
-        Option::Some('C'),
-        Option::None,
+        Option::Some('A'), Option::None, Option::Some('B'), Option::Some('C'), Option::None,
     ];
     let mut student = Student { name: 'Bob', courses: courses };
     display_grades(@student, 0);

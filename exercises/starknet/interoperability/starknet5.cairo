@@ -42,9 +42,10 @@ mod ContractA {
 
     #[external(v0)]
     impl ContractAImpl of super::IContractA<ContractState> {
-        fn set_value(ref self: ContractState, value: u128) -> bool {
-            // TODO: check if contract_b is enabled.
-            // If it is, set the value and return true. Otherwise, return false.
+        fn set_value(
+            ref self: ContractState, value: u128
+        ) -> bool { // TODO: check if contract_b is enabled.
+        // If it is, set the value and return true. Otherwise, return false.
         }
 
         fn get_value(self: @ContractState) -> u128 {

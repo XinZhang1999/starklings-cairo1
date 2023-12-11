@@ -16,7 +16,7 @@ mod order {
     }
 
     fn new_order(name: felt252, made_by_phone: bool, item: felt252) -> Order {
-        Order { name, year: YEAR, made_by_phone, made_by_email: !made_by_phone, item,  }
+        Order { name, year: YEAR, made_by_phone, made_by_email: !made_by_phone, item, }
     }
 }
 

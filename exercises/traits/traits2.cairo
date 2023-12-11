@@ -17,12 +17,12 @@
 
 #[derive(Copy, Drop)]
 struct Cat {
-    noise: felt252, 
+    noise: felt252,
 }
 
 #[derive(Copy, Drop)]
 struct Cow {
-    noise: felt252, 
+    noise: felt252,
 }
 
 trait AnimalTrait<T> {
